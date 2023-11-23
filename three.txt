@@ -1,0 +1,112 @@
+REVER:
+
+original_string = "Hello, World!"
+reversed_string = ""
+for char in original_string:
+    reversed_string = char + reversed_string
+print("Reversed String:", reversed_string)
+
+COUNT char:
+
+original_string = "Hello, World!"
+char_count = 0
+for char in original_string:
+    char_count += 1
+print("Number of Characters:", char_count)
+
+UPPER:
+
+original_string = "Hello, World!"
+uppercase_string = ""
+for char in original_string:
+    uppercase_string += chr(ord(char) - 32) if 'a' <= char <= 'z' else char
+print("Uppercase String:", uppercase_string)
+
+LOWER:
+
+original_string = "Hello, World!"
+lowercase_string = ""
+
+for char in original_string:
+    if 'A' <= char <= 'Z':
+        lowercase_string += chr(ord(char) + 32)
+    else:
+        lowercase_string += char
+
+print("Lowercase String:", lowercase_string)
+
+COUNT WORD:
+original_string = "Hello, World!"
+word_count = 1
+for char in original_string:
+    if char.isspace():
+        word_count += 1
+print("Number of Words:", word_count)
+
+REMOVE WSP:
+
+original_string = " Hello,  World! "
+trimmed_string = ""
+for char in original_string:
+    if char != ' ':
+        trimmed_string += char
+print("Trimmed String:", trimmed_string)
+
+PALIN:
+
+original_string = "level"
+is_palindrome = True
+for i in range(len(original_string)//2):
+    if original_string[i] != original_string[-i-1]:
+        is_palindrome = False
+        break
+print("Is Palindrome:", is_palindrome)
+
+CONCT:
+
+string1 = "Hello"
+string2 = ", World!"
+concatenated_string = ""
+for char in string1 + string2:
+    concatenated_string += char
+print("Concatenated String:", concatenated_string)
+
+SUBSTR:
+
+original_string = "Hello, World!"
+start_index = 7
+end_index = 12
+substring = ""
+for i in range(start_index, end_index):
+    substring += original_string[i]
+print("Substring:", substring)
+
+FILEOCC:
+
+original_string = "Hello, World!"
+target_char = 'o'
+char_count = 0
+for char in original_string:
+    if char == target_char:
+        char_count += 1
+print(f"Occurrences of '{target_char}':", char_count)
+
+SWAPCASE:
+
+original_string = "Hello, World!"
+swapped_case_string = ""
+for char in original_string:
+    if 'a' <= char <= 'z':
+        swapped_case_string += chr(ord(char) - 32)
+    elif 'A' <= char <= 'Z':
+        swapped_case_string += chr(ord(char) + 32)
+    else:
+        swapped_case_string += char
+print("Swapped Case String:", swapped_case_string)
+
+
+
+
+
+
+
